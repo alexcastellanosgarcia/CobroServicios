@@ -1,7 +1,7 @@
 ﻿
 namespace CobroServicios
 {
-    partial class Form1
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,10 +29,17 @@ namespace CobroServicios
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FrmPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(864, 542);
+            this.Name = "FrmPrincipal";
+            this.Text = "Home";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
