@@ -10,37 +10,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CobroServicios
+namespace CobroServicios.Clientes
 {
-    public partial class frmPrincipal : MaterialForm
+    public partial class frmClientes : MaterialForm
     {
-        public frmPrincipal()
+        public frmClientes()
         {
             InitializeComponent();
-
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-
         }
 
-        private void FrmPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabSelectorClientes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabServicioConsultas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabClienteRegistro_Click(object sender, EventArgs e)
+        private void frmClientes_Load(object sender, EventArgs e)
         {
 
         }

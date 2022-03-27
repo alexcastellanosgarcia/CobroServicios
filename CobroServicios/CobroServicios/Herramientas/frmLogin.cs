@@ -30,7 +30,7 @@ namespace CobroServicios.Herramientas
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            FrmPrincipal objprincipal = new FrmPrincipal();
+            frmPrincipal objprincipal = new frmPrincipal();
             objprincipal.Show();
             
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace CobroServicios
 {
-    partial class FrmPrincipal
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -30,7 +30,7 @@ namespace CobroServicios
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.TabMenuPrincipal = new MaterialSkin.Controls.MaterialTabControl();
             this.tabClientes = new System.Windows.Forms.TabPage();
             this.tabOpcionClientes = new MaterialSkin.Controls.MaterialTabControl();
@@ -120,6 +120,7 @@ namespace CobroServicios
             this.tabClienteRegistro.TabIndex = 0;
             this.tabClienteRegistro.Text = "Registro";
             this.tabClienteRegistro.UseVisualStyleBackColor = true;
+            this.tabClienteRegistro.Click += new System.EventHandler(this.tabClienteRegistro_Click);
             // 
             // tabClienteConsulta
             // 
@@ -370,7 +371,7 @@ namespace CobroServicios
             this.listaImagenes.Images.SetKeyName(2, "preference.png");
             this.listaImagenes.Images.SetKeyName(3, "services.png");
             // 
-            // FrmPrincipal
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -378,7 +379,7 @@ namespace CobroServicios
             this.Controls.Add(this.TabMenuPrincipal);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.TabMenuPrincipal;
-            this.Name = "FrmPrincipal";
+            this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SYSPAYSER (Sistema Pago de Servicios)";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);

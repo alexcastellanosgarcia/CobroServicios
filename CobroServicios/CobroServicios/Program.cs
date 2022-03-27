@@ -1,4 +1,5 @@
-﻿using CobroServicios.Herramientas;
+﻿using CobroServicios.Clientes;
+using CobroServicios.Herramientas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace CobroServicios
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrincipal());
+            Application.Run(new frmClientes());
         }
     }
 }
