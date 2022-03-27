@@ -8,3 +8,6 @@ C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServic
 C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\obj\Debug\CobroServicios.csproj.CoreCompileInputs.cache
 C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\obj\Debug\CobroServicios.exe
 C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\obj\Debug\CobroServicios.pdb
+C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\bin\Debug\MaterialSkin.dll
+C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\obj\Debug\CobroServicios.csproj.CopyComplete
+C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\obj\Debug\CobroServicios.Herramientas.frmLogin.resources
