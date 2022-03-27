@@ -12,3 +12,5 @@ C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServic
 C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\obj\Debug\CobroServicios.csproj.CopyComplete
 C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\obj\Debug\CobroServicios.Herramientas.frmLogin.resources
 C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\obj\Debug\CobroServicios.Clientes.frmClientes.resources
+C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\bin\Debug\System.Data.SqlClient.dll
+C:\Programacion Alex Cast\Proyectos C#\CobroServicios\CobroServicios\CobroServicios\bin\Debug\System.Data.SqlClient.xml
