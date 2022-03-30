@@ -3,3 +3,14 @@ git rm -r --cached .
 git add .
 git commit -m "Reseteando exclusiones VS 2022"
 
+
+
+git">git rm -r --cached .
+
+git add .
+
+git">git commit -m "fixed untracked files"
+
+
+
+

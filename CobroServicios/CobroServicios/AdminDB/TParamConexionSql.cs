@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
+
 namespace CobroServicios.AdminDB
 {
-    class TParamConexionSql
+    public class TParamConexionSql
     {
         private SqlConnectionStringBuilder ConectorSql = new SqlConnectionStringBuilder();
 
@@ -19,6 +20,11 @@ namespace CobroServicios.AdminDB
             ConectorSql.Password = "Admin%123";
 
 
+        }
+
+        public String getStringConexion() //metodo retorna la cadena de conexion
+        {
+            return ConectorSql.ConnectionString; 
         }
 
     }
