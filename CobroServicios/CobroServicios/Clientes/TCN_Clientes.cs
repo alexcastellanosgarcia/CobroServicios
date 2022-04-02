@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CobroServicios.Modelo;
 using CobroServicios.Clientes;
+using System.Data;
 
 namespace CobroServicios.Clientes
 {
@@ -15,7 +16,6 @@ namespace CobroServicios.Clientes
         public TModelClientes Consultar(String Id)
         {
             var Result = int.TryParse(Id, out int ValId);
-
             if (Result)
                 return ObjAD_Clientes.Consultar(ValId);
             else

@@ -23,39 +23,33 @@ namespace CobroServicios.Clientes
 
         }
         public TModelClientes Consultar(int Id)
-        {
-            using (SqlConnection con = new SqlConnection(ObjetoConexionSql.getStringConexion()))
-            {
-                DataTable dtClientes = new DataTable();
-                
+        {            
+            using (SqlConnection conexion = new SqlConnection(ObjetoConexionSql.getStringConexion()))
+            {                                
                 try
                 {
-                    con.Open();
-                    SqlCommand query = new SqlCommand($"SELECT * FROM CLIENTES WHERE ID = {Id}");
-                    dtClientes.Load(query.ExecuteReader());
-                    con.Close();
+                    conexion.Open();
+                    SqlCommand query = new SqlCommand($"SELECT * FROM CLIENTES WHERE ID = {Id}", conexion);
+                    DataTable dtClientes = new DataTable();
+                    dtClientes.Load(query.ExecuteReader());                    
                     if (dtClientes.Rows.Count > 0)
                     {
                         foreach (DataRow Fila in dtClientes.Rows)
                         {
                             ObjCliente.Id = Convert.ToInt32(Fila["ID"].ToString());
                             ObjCliente.Identidad = Fila["IDENTIDAD"].ToString();
-                            ObjCliente.Nombre = Fila["NOMRE"].ToString();
+                            ObjCliente.Nombre = Fila["NOMBRE"].ToString();
                             ObjCliente.Direccion = Fila["DIRECCION"].ToString();
                             ObjCliente.Telefono = Fila["TELEFONO"].ToString();
                             ObjCliente.Correo = Fila["CORREO"].ToString();
-                            ObjCliente.Municipio = Fila["MUNICIPIO"].ToString();
-                            ObjCliente.FechaNacimiento = Fila["FECHA_NACIMIENTO"].ToString();
-                            ObjCliente.FechaCreacion = Fila["FECHA_CREACION"].ToString();
-                            ObjCliente.FechaModificacion = Fila["FECHA_MODIFICACION"].ToString();
+                            ObjCliente.Municipio = Fila["MUNICIPIO"].ToString();                                                      
                             ObjCliente.UsuarioCreacion = Fila["USUARIO_CREACION"].ToString();
                             ObjCliente.UsuarioModificacion = Fila["USUARIO_MODIFICACION"].ToString();
-
-
+                            /*DateTime Fecha_Creacion = new DateTime();
+                            ObjCliente.UsuarioCreacion = (DateTime.TryParse(Fila["FECHA_CREACION"].ToString(), out Fecha_Creacion));*/
                         }
-
                     }
-
+                    conexion.Close();
                 }
                 catch(Exception Err)
                 {
@@ -63,7 +57,7 @@ namespace CobroServicios.Clientes
                 }
             }
 
-            return default;
+            return ObjCliente;
         }
 
         public bool Guardar(TModelClientes prmCliente) 

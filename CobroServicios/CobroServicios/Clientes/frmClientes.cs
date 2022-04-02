@@ -9,11 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CobroServicios.Clientes;
 
 namespace CobroServicios.Clientes
 {
     public partial class frmClientes : MaterialForm
     {
+        TCN_Clientes ObjCN_clientes = new TCN_Clientes();
+
         public frmClientes()
         {
             InitializeComponent();
@@ -26,6 +29,33 @@ namespace CobroServicios.Clientes
         private void frmClientes_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void materialTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            var cliente = ObjCN_clientes.Consultar(txtid.Text);
+            if(cliente != null)
+            {
+                txtidentidad.Text = cliente.Identidad;
+                txtnombre.Text = cliente.Nombre;
+                txtdireccion.Text = cliente.Direccion;
+                txttelefono.Text = cliente.Telefono;
+                txtcorreo.Text = cliente.Correo;
+                txtmunicipio.Text = cliente.Municipio;             
+
+            }
+
+            
         }
     }
 }
